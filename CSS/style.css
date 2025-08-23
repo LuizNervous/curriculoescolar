@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -9,6 +10,77 @@ body {
   background-color: #121212;
   line-height: 1.6;
 }
+main{
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #1b1717;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.menu a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.menu a:hover,.menu a.active {
+  background-color: #8e44ad;
+  color: #fff;
+}
+.menu-toggle{
+  display: none;
+  position:fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #8e44ad;
+  color: #fff;
+  border: none;font-size: 2rem;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+
+@media (max-width: 800px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    height: 100%;
+    padding-top: 80px;
+    transform: translateX(-100%);
+    background-color: #1b1717;
+  }
+
+  .menu.show {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
 .foto{
   margin: 10px;
   border-radius: 50%;
@@ -21,6 +93,7 @@ body {
   .foto{
     max-width: 100%;
   }
+
 }
 .foto > img{
   bottom: 0;

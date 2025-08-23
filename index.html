@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -11,78 +11,92 @@
 <body>
 
   <header>
-    <div>
-      <nav></nav>
-    </div>
+
     <div class="centralizarfoto">
-      <h1>Currículo de </h1>
+      <h1 id="inicio">Currículo de </h1>
       <div class="foto">
         <img src="imagens/luiz.png" alt="">
-      </div><h1><br>Luiz Gustavo Castro Neves</h1>
+      </div>
+      <h1>Luiz Gustavo Castro Neves</h1>
     </div>
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#principais">Principais Competências</a>
+      <a href="#formacao">Formação Acadêmica</a>
+      <a href="#exp">Experiência Profissional</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
   <main>
-    <section>
-      <div class="sectionh1">
-        <h1>Principais Competências</h1>
-      </div>
-      <ul>
-        <li>Sou um desenvolvedor front-end em formação, com habilidades sólidas em HTML e CSS para a construção de layouts e o desenvolvimento de interfaces de usuário.</li>
-        <li>Habilidades no uso do Pacote Office (Word, Excel e PowerPoint).</li>
-        <li>Conhecimento em controle de versão com Git e GitHub.</li>
-        <li>Experiência na criação de interfaces responsivas usando media queries.</li>
-        <li>Capacidade de resolução de problemas, com abordagem lógica para desafios técnicos.</li>
-        <li>Profissional proativo, com foco em aprendizado contínuo e busca por aprimoramento.</li>
-        <li>Portfólio online com projetos desenvolvidos em HTML e CSS :</li>
-        <li>
-          <a href="https://luiznervous.github.io/site-na-escola/" target="_blank">https://luiznervous.github.io/site-na-escola/</a>
-        </li>
-        <li>
-          <blockquote><a href="https://luiznervous.github.io/abu/" target="_blank">https://luiznervous.github.io/dark-mode/</a></blockquote>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <div class="sectionh1">
-        <h1>Formação acadêmica</h1>
-      </div>
-      <p>Ensino Médio e Técnico em Programação para Web (HTML e CSS) <br>
-        Instituto Federal do Paraná <a href="https://ifpr.edu.br/assis-chateaubriand/" target="_blank" rel="noopener noreferrer">(IFPR)</a>, Campus Assis Chateaubriand <br>
-        Em andamento (1º ano)</p>
-    </section>
-    <section>
-      <div class="sectionh1">
-        <h1>Experiência Profissional</h1>
-      </div>
-      <h2>Desenvolvedor Front-end </h2>
-      <p>Projetos Pessoais <br>
-        Desde o início dos estudos no IFPR :</p>
-      <ul>
-        <li>Desenvolvi projetos pessoais, aplicando conceitos de HTML semântico para estruturar páginas web.</li>
-        <li>Criei layouts modernos e responsivos utilizando CSS, garantindo a melhor visualização em diferentes dispositivos (mobile, tablet, desktop).</li>
-        <li>Implementei pequenas funcionalidades interativas e lógicas com JavaScript para aprimorar a experiência do usuário.</li>
-        <li>Adquiri conhecimentos básicos em Dart para prototipagem de aplicações e compreensão de lógica de programação.</li>
+    <div>
 
-        <li>Se quiser acessar meu projetos clique neste link <a href="https://github.com/LuizNervous" target="_blank">https://github.com/LuizNervous</a></li>
-      </ul>
-    </section>
-    <section>
-      <div class="sectionh1">
-        <h1>Contato</h1>
-      </div>
-      <h2>Dados de Contato</h2>
-      <ul>
-        <li>Luiz Gustavo Castro Neves</li>
-        <li>(44) 99824-4821</li>
-        <li>luiz.gu.neves@gmail.com</li>
-      </ul>
-      <p><strong>Localização</strong> : Assis Chateaubriand - PR</p>
-      <h2>Portfólio:</h2>
-      <a href="https://github.com/LuizNervous" target="_blank">https://github.com/LuizNervous</a>
-      <a href="" target="_blank"></a>
-    </section>
+
+    </div>
+
+    <div>
+      <section>
+        <div class="sectionh1">
+          <h1 id="principais">Principais Competências</h1>
+        </div>
+        <ul>
+          <li>Sou um desenvolvedor front-end em formação, com habilidades sólidas em HTML e CSS para a construção de layouts e o desenvolvimento de interfaces de usuário.</li>
+          <li>Habilidades no uso do Pacote Office (Word, Excel e PowerPoint).</li>
+          <li>Conhecimento em controle de versão com Git e GitHub.</li>
+          <li>Experiência na criação de interfaces responsivas usando media queries.</li>
+          <li>Capacidade de resolução de problemas, com abordagem lógica para desafios técnicos.</li>
+          <li>Profissional proativo, com foco em aprendizado contínuo e busca por aprimoramento.</li>
+          <li>Portfólio online com projetos desenvolvidos em HTML e CSS :</li>
+          <li>
+            <a href="https://luiznervous.github.io/site-na-escola/" target="_blank">https://luiznervous.github.io/site-na-escola/</a>
+          </li>
+          <li>
+            <blockquote><a href="https://luiznervous.github.io/abu/" target="_blank">https://luiznervous.github.io/dark-mode/</a></blockquote>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div class="sectionh1">
+          <h1 id="formacao">Formação acadêmica</h1>
+        </div>
+        <p>Ensino Médio e Técnico em Programação para Web (HTML e CSS) <br>
+          Instituto Federal do Paraná <a href="https://ifpr.edu.br/assis-chateaubriand/" target="_blank" rel="noopener noreferrer">(IFPR)</a>, Campus Assis Chateaubriand <br>
+          Em andamento (1º ano)</p>
+      </section>
+      <section>
+        <div class="sectionh1">
+          <h1 id="exp">Experiência Profissional</h1>
+        </div>
+        <h2>Desenvolvedor Front-end </h2>
+        <p>Projetos Pessoais <br>
+          Desde o início dos estudos no IFPR :</p>
+        <ul>
+          <li>Desenvolvi projetos pessoais, aplicando conceitos de HTML semântico para estruturar páginas web.</li>
+          <li>Criei layouts modernos e responsivos utilizando CSS, garantindo a melhor visualização em diferentes dispositivos (mobile, tablet, desktop).</li>
+          <li>Implementei pequenas funcionalidades interativas e lógicas com JavaScript para aprimorar a experiência do usuário.</li>
+          <li>Adquiri conhecimentos básicos em Dart para prototipagem de aplicações e compreensão de lógica de programação.</li>
+
+          <li>Se quiser acessar meu projetos clique neste link <a href="https://github.com/LuizNervous" target="_blank">https://github.com/LuizNervous</a></li>
+        </ul>
+      </section>
+      <section>
+        <div class="sectionh1">
+          <h1 id="contato">Contato</h1>
+        </div>
+        <h2>Dados de Contato</h2>
+        <ul>
+          <li>Luiz Gustavo Castro Neves</li>
+          <li>(44) 99824-4821</li>
+          <li>luiz.gu.neves@gmail.com</li>
+        </ul>
+        <p><strong>Localização</strong> : Assis Chateaubriand - PR</p>
+        <h2>Portfólio:</h2>
+        <a href="https://github.com/LuizNervous" target="_blank">https://github.com/LuizNervous</a>
+      </section>
+    </div>
   </main>
   <footer></footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
