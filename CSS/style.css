@@ -54,9 +54,23 @@ main{
   padding: 10px 14px;
   cursor: pointer;
   z-index: 1100;
+ 
+}
+.menu {
+  max-height: 80vh; /* ocupa no máximo 80% da altura da tela */
+  overflow-y: auto; /* adiciona rolagem se passar do limite */
 }
 
+@media (max-width: 400px) {
+  .menu {
+    width: 70%; /* deixa mais estreito */
+    font-size: 1rem; /* reduz o tamanho da fonte */
+  }
 
+  .menu a {
+    padding: 10px 15px; /* menos espaçamento */
+  }
+}
 @media (max-width: 800px) {
   .menu {
     position: fixed;
@@ -79,7 +93,6 @@ main{
     display: block;
   }
 }
-
 
 .foto{
   margin: 10px;
@@ -147,6 +160,26 @@ a:hover{
   section {
     margin: 20px;
     padding: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .foto {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  section {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .menu {
+    width: 180px; /* menor menu lateral */
   }
 }
 strong{
