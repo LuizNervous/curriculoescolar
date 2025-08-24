@@ -41,10 +41,10 @@ main {
 h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color:#9b335b;
+  color:#9b59b6;
 }
 span{
-  color: #9b335b;
+  color:#6a0dad;
 }
 .menu>a {
   color: #e0e0e0;
@@ -58,7 +58,7 @@ span{
 
 .menu a:hover,
 .menu a.active {
-   color:#aa3663;
+   color:#6a0dad;
   text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ span{
   
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   .menu {
     width: 70%;
     font-size: 1rem;
