@@ -88,11 +88,12 @@ span{
 @media (max-width: 400px) {
   .menu {
     width: 70%;
-
     font-size: 1rem;
-
   }
-
+ .responsivo{
+    display: flex;
+    justify-content: flex-end;
+  }
   .menu a {
     padding: 10px 15px;
     
@@ -111,6 +112,10 @@ span{
     padding-top: 80px;
     transform: translateX(-100%);
     background-color: #1b1717;
+  }
+  .responsivo{
+    display: flex;
+    justify-content: flex-end;
   }
 
   .menu.show {
