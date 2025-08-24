@@ -41,11 +41,11 @@ main {
 h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  background: var(--accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#9b335b;
 }
-
+span{
+  color: #9b335b;
+}
 .menu>a {
   color: #e0e0e0;
   text-decoration: none;
@@ -58,7 +58,7 @@ h1 {
 
 .menu a:hover,
 .menu a.active {
-  color: #8e44ad;
+   color:#aa3663;
   text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ h1 {
   width: 150px;
   height: 150px;
   overflow: hidden;
-  border: 3px solid #8e44ad;
+  border: 3px solid #000000;
 }
 
 @media (max-width:400px) {
@@ -151,7 +151,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  justify-content: space-around;
   padding: 20px;
 }
 
@@ -159,11 +159,11 @@ header {
   background: linear-gradient(135deg, #1f1f1f, #292929);
   padding: 40px 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  text-align: center;
 }
 
 .centralizarfoto>h1 {
   font-size: 2.5rem;
+  color: #e0e0e0; 
 }
 
 section {
@@ -173,9 +173,8 @@ section {
   padding: 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-li {
-  margin: 10px 0;
+li{
+  list-style: none;
 }
 
 .sectionh1 {
@@ -231,6 +230,9 @@ strong {
 }
 footer{
   text-align: center;
+  background: linear-gradient(135deg, #1f1f1f, #292929);
+  margin-top: 30px;
+  padding: 20px
 }
 #typewriter::after {
   content: '|';

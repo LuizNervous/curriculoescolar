@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-const texto = " Me chamo Luiz Gustavo, e este é meu currículo.";
+const texto = " Luiz Gustavo";
 const speed = 100; // velocidade em ms
 let i = 0;
 
@@ -37,3 +37,8 @@ function typeWriter() {
   }
 }
 window.onload = typeWriter;
+document.querySelectorAll('#backToTop, #backToTopClean').forEach(btn => {
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
