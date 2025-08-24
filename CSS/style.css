@@ -1,19 +1,28 @@
-*{
+:root {
+  --bg-color: #121212;
+  --text-color: #fff;
+  --accent: linear-gradient(45deg, #6a0dad, #9b59b6);
+}
+
+* {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #e0e0e0;
   background-color: #121212;
   line-height: 1.6;
 }
-main{
+
+main {
   display: grid;
   grid-template-columns: 2fr 10fr;
 }
+
 .menu {
   position: fixed;
   top: 50%;
@@ -29,48 +38,67 @@ main{
   z-index: 1000;
 }
 
-.menu a {
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: var(--accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu>a {
   color: #e0e0e0;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
   padding: 8px 12px;
   border-radius: 8px;
+  transition: color 0.3s;
 }
 
-.menu a:hover,.menu a.active {
-  background-color: #8e44ad;
-  color: #fff;
+.menu a:hover,
+.menu a.active {
+  color: #8e44ad;
+  text-decoration: none;
 }
-.menu-toggle{
+
+.menu-toggle {
   display: none;
-  position:fixed;
+  position: fixed;
   top: 20px;
   left: 20px;
   background-color: #8e44ad;
   color: #fff;
-  border: none;font-size: 2rem;
+  border: none;
+  font-size: 2rem;
   border-radius: 8px;
   padding: 10px 14px;
   cursor: pointer;
   z-index: 1100;
- 
+
 }
+
 .menu {
-  max-height: 80vh; /* ocupa no máximo 80% da altura da tela */
-  overflow-y: auto; /* adiciona rolagem se passar do limite */
+  max-height: 80vh;
+ 
+  overflow-y: auto;
+  
 }
 
 @media (max-width: 400px) {
   .menu {
-    width: 70%; /* deixa mais estreito */
-    font-size: 1rem; /* reduz o tamanho da fonte */
+    width: 70%;
+
+    font-size: 1rem;
+
   }
 
   .menu a {
-    padding: 10px 15px; /* menos espaçamento */
+    padding: 10px 15px;
+    
   }
 }
+
 @media (max-width: 800px) {
   .menu {
     position: fixed;
@@ -94,63 +122,77 @@ main{
   }
 }
 
-.foto{
+.foto {
   margin: 10px;
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
   border: 3px solid #8e44ad;
 }
-@media (max-width:400px){
-  .foto{
+
+@media (max-width:400px) {
+  .foto {
     max-width: 100%;
   }
 
 }
-.foto > img{
+
+#inicio {
+  color: #e0e0e0;
+}
+
+.foto>img {
   bottom: 0;
   width: 100%;
 }
-.centralizarfoto{
+
+.centralizarfoto {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+
   padding: 20px;
 }
+
 header {
   background: linear-gradient(135deg, #1f1f1f, #292929);
   padding: 40px 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
-.centralizarfoto>h1{
+
+.centralizarfoto>h1 {
   font-size: 2.5rem;
 }
-section{
-  background-color:#1f1f1f ;
+
+section {
+  background-color: #1f1f1f;
   margin: 36px;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-li{
+
+li {
   margin: 10px 0;
 }
-.sectionh1{
-  display: flex;
-  justify-content: center;
+
+.sectionh1 {
   font-size: 1.6rem;
+  margin:   auto;
 }
-a{
+
+a {
   color: rgb(134, 197, 233);
   text-decoration: none;
 }
-a:hover{
+
+a:hover {
   color: rgb(65, 167, 226);
   text-decoration: underline;
 }
+
 @media (max-width: 600px) {
   .centralizarfoto h1 {
     font-size: 2rem;
@@ -162,6 +204,7 @@ a:hover{
     padding: 20px;
   }
 }
+
 @media (max-width: 400px) {
   .foto {
     max-width: 100%;
@@ -179,9 +222,23 @@ a:hover{
   }
 
   .menu {
-    width: 180px; /* menor menu lateral */
+    width: 180px;
   }
 }
-strong{
+
+strong {
   font-size: 1.2em;
+}
+footer{
+  text-align: center;
+}
+#typewriter::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }

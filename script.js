@@ -25,3 +25,15 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+const texto = " Me chamo Luiz Gustavo, e este é meu currículo.";
+const speed = 100; // velocidade em ms
+let i = 0;
+
+function typeWriter() {
+  if (i < texto.length) {
+    document.getElementById("typewriter").textContent += texto.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+window.onload = typeWriter;
