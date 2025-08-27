@@ -17,12 +17,12 @@ body {
   background-color: #121212;
   line-height: 1.6;
 }
-
+/*deixando colunas no main*/
 main {
   display: grid;
   grid-template-columns: 2fr 10fr;
 }
-
+/*meuno do lado*/
 .menu {
   position: fixed;
   top: 50%;
@@ -36,16 +36,19 @@ main {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   z-index: 1000;
+  margin-top: 20px;
 }
 
 h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color:#9b59b6;
+  color: #9b59b6;
 }
-span{
-  color:#6a0dad;
+
+span {
+  color: #6a0dad;
 }
+
 .menu>a {
   color: #e0e0e0;
   text-decoration: none;
@@ -54,12 +57,14 @@ span{
   padding: 8px 12px;
   border-radius: 8px;
   transition: color 0.3s;
+  text-align: center;
 }
 
 .menu a:hover,
 .menu a.active {
-   color:#6a0dad;
+  color: #6a0dad;
   text-decoration: none;
+  transform: scale(1.08 );
 }
 
 .menu-toggle {
@@ -78,69 +83,13 @@ span{
 
 }
 
-.menu {
-  max-height: 80vh;
- 
-  overflow-y: auto;
-  
-}
-
-@media (max-width: 360px) {
-  .menu {
-    width: 70%;
-    font-size: 1rem;
-  }
- .responsivo{
-    display: flex;
-    justify-content: flex-end;
-  }
-  .menu a {
-    padding: 10px 15px;
-    
-  }
-}
-
-@media (max-width: 800px) {
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 220px;
-    height: 100%;
-    padding-top: 80px;
-    transform: translateX(-100%);
-    background-color: #1b1717;
-  }
-  .responsivo{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .menu.show {
-    transform: translateX(0);
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
 .foto {
   margin: 10px;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   overflow: hidden;
-  border: 3px solid #000000;
-}
-
-@media (max-width:400px) {
-  .foto {
-    max-width: 100%;
-  }
-
+  border: 3px solid #791697;
 }
 
 #inicio {
@@ -168,23 +117,24 @@ header {
 
 .centralizarfoto>h1 {
   font-size: 2.5rem;
-  color: #e0e0e0; 
+  color: #e0e0e0;
 }
 
 section {
   background-color: #1f1f1f;
-  margin: 36px 4rem ;
+  margin: 36px 4rem;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-li{
+
+li {
   list-style: none;
 }
 
 .sectionh1 {
   font-size: 1.6rem;
-  margin:   auto;
+  margin: auto;
 }
 
 a {
@@ -197,18 +147,36 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .centralizarfoto h1 {
-    font-size: 2rem;
-    text-align: center;
+strong {
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+  background: linear-gradient(135deg, #1f1f1f, #292929);
+  margin-top: 30px;
+  padding: 20px
+}
+
+#typewriter::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
   }
 
-  section {
-    margin: 20px;
-    padding: 20px;
+  50% {
+    opacity: 0;
   }
 }
 
+/*Responsivo*/
 @media (max-width: 400px) {
   .foto {
     max-width: 100%;
@@ -230,22 +198,64 @@ a:hover {
   }
 }
 
-strong {
-  font-size: 1.2em;
-}
-footer{
-  text-align: center;
-  background: linear-gradient(135deg, #1f1f1f, #292929);
-  margin-top: 30px;
-  padding: 20px
-}
-#typewriter::after {
-  content: '|';
-  animation: blink 0.7s infinite;
-  margin-left: 2px;
+@media (max-width: 600px) {
+  .centralizarfoto h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  section {
+    margin: 20px;
+    padding: 20px;
+  }
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+@media (max-width:400px) {
+  .foto {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    height: 100%;
+    padding-top: 80px;
+    transform: translateX(-100%);
+    background-color: #1b1717;
+  }
+
+
+  .menu.show {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.menu {
+  max-height: 80vh;
+
+  overflow-y: auto;
+
+}
+
+@media (max-width: 360px) {
+  .menu {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .menu a {
+    padding: 10px 15px;
+
+  }
 }
