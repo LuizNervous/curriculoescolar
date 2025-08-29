@@ -74,13 +74,21 @@ input {
   padding: 10px;
   border: #6a0dad 3px solid;
   border-radius: 7px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input:hover{
+    border: #8b1adb 3px solid;
 }
 
 button {
   padding: 20px;
-  background: #7625af;
+  background: #5c0e94;
   color: aliceblue;
   border-radius: 5px;
+}
+button:hover{
+  background: #a748eb;
+  color: aliceblue;
 }
 
 .butao {
