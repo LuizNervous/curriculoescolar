@@ -17,11 +17,13 @@ body {
   background-color: #121212;
   line-height: 1.6;
 }
+
 /*deixando colunas no main*/
 main {
   display: grid;
   grid-template-columns: 2fr 10fr;
 }
+
 /*meuno do lado*/
 .menu {
   position: fixed;
@@ -64,7 +66,7 @@ span {
 .menu a.active {
   color: #6a0dad;
   text-decoration: none;
-  transform: scale(1.08 );
+  transform: scale(1.08);
 }
 
 .menu-toggle {

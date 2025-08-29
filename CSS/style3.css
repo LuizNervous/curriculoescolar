@@ -12,15 +12,20 @@ body {
   background-color: #121212;
   line-height: 1.6;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 
+  flex-direction: column;
+
+  min-height: 100vh;
 }
 
 header a {
   color: #e0e0e0;
   text-decoration: none;
+}
 
+header h1 {
+  color: #6a0dad;
+  font-size: 2.4rem;
 }
 
 header a:hover {
@@ -38,57 +43,17 @@ header {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
-  color: #6a0dad;
-  padding-bottom: 10px;
-  font-size: 2.4rem;
-}
-
-main h1 {
-  color: #7625af;
-  font-size: 4.9;
+main h2 {
+  color: #7e22c0;
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-form {
   background-color: #1f1f1f;
   margin: 30px;
   border-radius: 12px;
   padding: 20px;
   flex-grow: 1;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-input {
-  margin: 10px;
-  padding: 10px;
-  border: #6a0dad 3px solid;
-  border-radius: 7px;
-}
-
-button {
-  padding: 20px;
-  background: #7625af;
-  color: aliceblue;
-  border-radius: 5px;
-}
-
-.butao {
-  margin-left: 0.7rem;
-}
-
-#mensagem {
-  padding: 20px;
 }
 
 footer {
