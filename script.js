@@ -42,3 +42,4 @@ document.querySelectorAll('#backToTop, #backToTopClean').forEach(btn => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+

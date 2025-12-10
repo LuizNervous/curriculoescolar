@@ -16,29 +16,25 @@
     </header>
     <main>
         <div>
-            
-            <form><h1>Formulario</h1>
-                <label for="name">Escreva seu nome completo.</label>
-                <input type="text" placeholder="Escreva seu nome" required> <br>
-
-                <label for="email">Escreva seu Email</label> 
-                <input type="text" placeholder="Escreva seu email" required><br>
-
-                <div><p>Você é um recrutador ?</p>
-                <input type="radio" name="recrutador s/n" id="sim" required>
-                <label for="sim">Sim</label>
-                <input type="radio" id="não" name="recrutador s/n" value="html" required>
-                <label for="não">Não</label></div><br>
-
-                <label for="mensagem">Escreva uma mensagem. (se tiver).</label> 
-                <input type="text" name="mensagem" id="mensagem" placeholder="Escreva sua mensgem" required>
-            
-            <div class="butao"><button type="submit"> Enviar</button></div>
-        </form>
+            <form action="https://formspree.io/f/mjknakea" method="POST">
+                <h1>Formulario</h1>
+                <label>
+                    <h2>Seu email:</h2>
+                    <input type="email" name="email" placeholder="escreva seu email.." required>
+                </label>
+                <label>
+                    <h2>Sua messagem:</h2>
+                    <textarea placeholder="sua mensagem..." rows="5" cols="50" name="message"></textarea>
+                </label>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </div>
 
     </main>
-    <footer><p>© 2025 Luiz Gustavo. Todos os direitos reservados.</p></footer>
+    <footer>
+        <p>© 2025 Luiz Gustavo. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

@@ -60,34 +60,45 @@ form {
   background-color: #1f1f1f;
   margin: 30px;
   border-radius: 12px;
-  padding: 20px;
+  padding: 10px;
+  width: 500px;
   flex-grow: 1;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-
+textarea{
+  padding: 5px;
+  margin:10px ;
+  min-width: 90%;
+  border-radius: 9px;
+    border: #6a0dad 3px solid;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 input {
   margin: 10px;
   padding: 10px;
   border: #6a0dad 3px solid;
   border-radius: 7px;
+  min-width: 90%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-input:hover{
-    border: #8b1adb 3px solid;
+
+input:hover {
+  border: #8b1adb 3px solid;
 }
 
 button {
-  padding: 20px;
-  background: #5c0e94;
-  color: aliceblue;
+  padding: 25px;
+  background: linear-gradient(135deg, #fc466b, #3f5efb);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
+  min-width: 90%;
 }
-button:hover{
-  background: #a748eb;
+
+button:hover {
+  cursor: pointer;
   color: aliceblue;
 }
 
