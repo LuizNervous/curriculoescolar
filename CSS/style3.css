@@ -25,6 +25,9 @@ header h1 {
   color: #6a0dad;
   font-size: 2.4rem;
 }
+div{
+  margin: 10px;
+}
 
 header a:hover {
   color: #9244b1;
@@ -52,6 +55,7 @@ main {
   padding: 20px;
   flex-grow: 1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }

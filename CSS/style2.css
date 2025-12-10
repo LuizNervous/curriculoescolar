@@ -1,37 +1,25 @@
-/*reset e base*/
+/* ===== Reset e base ===== */
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #e0e0e0;
   background-color: #121212;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 }
 
-header a {
-  color: #e0e0e0;
-  text-decoration: none;
-
-}
-
-header a:hover {
-  color: #9244b1;
-  transition: color 0.3s;
-}
-
+/* ===== Header ===== */
 header {
   background: linear-gradient(135deg, #1f1f1f, #292929);
   padding: 40px 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,79 +28,103 @@ header {
 
 header h1 {
   color: #6a0dad;
-  padding-bottom: 10px;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
-main h1 {
-  color: #7625af;
-  font-size: 4.9;
+header a {
+  color: #e0e0e0;
+  text-decoration: none;
 }
 
+header a:hover {
+  color: #9244b1;
+  transition: 0.3s;
+}
+
+/* ===== Main ===== */
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  padding: 20px 10px;
+  width: 100%;
 }
 
+/* ===== Form ===== */
 form {
   background-color: #1f1f1f;
-  margin: 30px;
+  padding: 20px;
   border-radius: 12px;
-  padding: 10px;
-  width: 500px;
-  flex-grow: 1;
+
+  width: 100%;
+  max-width: 500px;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
-textarea{
-  padding: 5px;
-  margin:10px ;
-  min-width: 90%;
-  border-radius: 9px;
-    border: #6a0dad 3px solid;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-input {
-  margin: 10px;
-  padding: 10px;
-  border: #6a0dad 3px solid;
-  border-radius: 7px;
-  min-width: 90%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+form h1 {
+  color: #7625af;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-input:hover {
-  border: #8b1adb 3px solid;
+/* Inputs */
+input,
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 3px solid #6a0dad;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  font-family: Cambria, serif;
 }
 
+input:hover,
+textarea:hover {
+  border-color: #8b1adb;
+}
+
+/* Botão */
 button {
-  padding: 25px;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+
   background: linear-gradient(135deg, #fc466b, #3f5efb);
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
-  min-width: 90%;
 }
 
 button:hover {
-  cursor: pointer;
-  color: aliceblue;
+  opacity: 0.9;
 }
 
-.butao {
-  margin-left: 0.7rem;
-}
-
-#mensagem {
-  padding: 20px;
-}
-
+/* ===== Footer ===== */
 footer {
   text-align: center;
   background: linear-gradient(135deg, #1f1f1f, #292929);
-  margin-top: 30px;
-  padding: 20px
+  padding: 20px;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  form h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
 }
